@@ -1,28 +1,29 @@
 {
-  "name": "react-spectrum-template v3 and s2",
+  "name": "s2-webpack-5-example",
   "version": "1.0.0",
-  "description": "A template for reporting bugs",
-  "keywords": [],
-  "main": "src/index.js",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
   "dependencies": {
-    "@adobe/react-spectrum": "^3.18.0",
     "@react-spectrum/s2": "^0.3.1",
-    "@spectrum-icons/workflow": "^4.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1"
+    "@adobe/react-spectrum": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "react-app-rewired": "2.2.1",
-    "typescript": "3.8.3",
-    "unplugin-parcel-macros": "2.12.4",
-    "@babel/plugin-syntax-import-attributes": "7.25.7"
-  },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "unplugin-parcel-macros": "0.0.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
 }
