@@ -1,12 +1,15 @@
 import React from "react";
 import { ActionButton, ActionMenu, Button, ButtonGroup, Content, Dialog, DialogTrigger, Heading, Header, MenuItem, Picker, PickerItem, Provider, Text, TextField} from '@react-spectrum/s2'
+import {Provider as RS3Provider} from "@react-spectrum/provider";
 import { style } from "@react-spectrum/s2/style" with {type: 'macro'};
 
 
 import "@react-spectrum/s2/page.css";
+import { defaultTheme } from "@adobe/react-spectrum";
 
 export function Spectrum2() {
-  return (<Provider background="base" styles={style({height: '[100vh]', padding: 0})}>
+  return (<RS3Provider theme={defaultTheme}>
+    <Provider background="base" styles={style({height: '[100vh]', padding: 0})}>
     <div style={{display: 'flex', flexDirection: 'column', gap: 16, padding: 80}}>
         <Heading level={3}>Hello from Spectrum 2</Heading>
         <DialogTrigger isDismissable>
@@ -65,5 +68,5 @@ export function Spectrum2() {
             </div>
         </div>
     </div>
-  </Provider>);
+  </Provider></RS3Provider>);
 }
